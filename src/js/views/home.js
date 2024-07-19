@@ -1,6 +1,6 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Context } from "../store/appContext";
-import { Card } from "../component/card";
+import { Card } from "../component/card.jsx";
 
 export const Home = () => {
 	

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Card = ({ name, uid}) => {
 
@@ -11,9 +12,9 @@ export const Card = ({ name, uid}) => {
                 <img src={''} alt={name} />
                 <figcaption>{name}</figcaption>
             </figure>
-            <link to={'/details/'+uid} className="btn btn-primary">
+            <Link to={'/details/'+uid} className="btn btn-primary">
                 learn more
-            </link>
+            </Link>
             <button className="btn btn-secondary">
                fav 
             </button>
