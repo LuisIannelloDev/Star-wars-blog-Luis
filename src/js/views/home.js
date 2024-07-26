@@ -8,7 +8,7 @@ export const Home = () => {
 
 	return(
 	<div className="text-center mt-5">
-		<div className="container d-flex">
+		<div className="container d-flex over-flow-x-auto">
 			
 		
          {store.people?.map(el=> <Card key={el.uid} name={el.name} uid={el.uid} />)}   

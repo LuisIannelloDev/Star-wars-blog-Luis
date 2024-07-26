@@ -16,9 +16,9 @@ export const Details = () => {
         <div className="container d-flex">
             <div>
                 <figure>
-                    <img src={'https://starwars-visualguide.com/#/characters/${uid}.jpg'} alt={store.peopleDetails?.properties.name} />
+                    <img src={`https://starwars-visualguide.com/assets/img/characters/${uid}.jpg`} alt={store.peopleDetails?.properties.name} />
                     <figcaption>
-                    {store.peopleDetails?.name}
+                        {store.peopleDetails?.properties.name}
                     </figcaption>
                 </figure>
             </div>
@@ -28,7 +28,7 @@ export const Details = () => {
             <p>{store.peopleDetails?.properties.height}</p>
             </div>
         </div>
-          <p></p>
+        <p>{store.peopleDetails?.description}</p>
         </>
     
         
