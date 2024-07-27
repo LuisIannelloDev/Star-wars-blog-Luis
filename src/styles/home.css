@@ -21,3 +21,8 @@
 .heart-button .bi-heart-fill {
     font-size: 20px; /* Tamaño del ícono */
 }
+
+.custom-margin-top {
+    margin-top: 100px; /* ajusta este valor según sea necesario */
+  }
+  

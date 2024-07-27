@@ -8,16 +8,25 @@ export const Navbar = () => {
                 <img 
                     src="https://www.freepnglogos.com/uploads/star-wars-logo-31.png" 
                     alt="Star Wars" 
-                    width="120" 
-                    height="120" 
+                    width="50" 
+                    height="50" 
                     className="d-inline-block align-top"
                 />
             </Link>
             <div className="ml-auto">
-                <Link to="/demo">
-                    <button className="btn btn-primary">Favorites</button>
-                </Link>
+                <div className="dropdown">
+                    <button className="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Favorites
+                    </button>
+                    <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                        {/* Dropdown menu links */}
+                        <li><Link className="dropdown-item" to="/favorite/1">Favorite 1</Link></li>
+                        <li><Link className="dropdown-item" to="/favorite/2">Favorite 2</Link></li>
+                        <li><Link className="dropdown-item" to="/favorite/3">Favorite 3</Link></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     );
 };
+
